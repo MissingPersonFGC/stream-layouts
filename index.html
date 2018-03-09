@@ -4,12 +4,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>My Project</title>
+	<title>HTML5 Stream Layout Generator</title>
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
 
-	<h1>Hello World!</h1>
+	<h1>HTML5 Stream Layout Generator</h1>
+
+	<div class="stream-changer">
+		<label for="stream-type">Choose your stream variety:</label>
+		<select class="stream-type" name="stream-type">
+			<option value="hdstream">HD Stream</option>
+			<option value="sdstream">SD Stream</option>
+			<option value="hdtournamentstream">HD Tournament Stream</option>
+			<option value="sdtournamentstream">SD Tournament Stream</option>
+			<option value="hdspeedrunstream">HD Speedrun Stream</option>
+			<option value="sdspeedrunstream">SD Speedrun Stream</option>
+		</select>
+	</div>
+
+	<div class="streampreview">
+		<iframe src="hdstream.html"></iframe>
+	</div>
+	<div class="html-generation">
+		<form class="generate-html">
+			<button type="button" name="generate-button">Generate HTML</button>
+		</form>
+
+		<textarea name="generated-html"></textarea>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script src="public/scripts/main.js"></script>
 </body>
