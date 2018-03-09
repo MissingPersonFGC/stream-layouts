@@ -141,6 +141,29 @@ body.stream-layout {
   height: 1080px;
   font-family: 'Billionaire', sans-serif; }
 
+body.generator-body {
+  background: linear-gradient(135deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+  color: white; }
+
+select {
+  background: black;
+  color: white;
+  border: 0;
+  padding: 3px; }
+
+button {
+  padding: 10px 30px;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  -webkit-transition: background 0.5s, border-radius 0.5s, border 0.5s;
+  transition: background 0.5s, border-radius 0.5s, border 0.5s; }
+  button:hover {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px; }
+
 h1 {
   text-align: center; }
 

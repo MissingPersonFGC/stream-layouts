@@ -6,12 +6,30 @@
   src: url('../../fonts/BillionaireMediumGrunge.ttf') format('truetype');
 }
 
+@import 'mixins';
+
 @import 'setup';
 
 body.stream-layout {
 	width: 1920px;
 	height: 1080px;
   font-family: 'Billionaire', sans-serif;
+}
+
+body.generator-body {
+  background: linear-gradient(135deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+  color: white;
+}
+
+select {
+  background: black;
+  color: white;
+  border: 0;
+  padding: 3px;
+}
+
+button {
+  @include button(black, white);
 }
 
 h1 {
